@@ -1,0 +1,9 @@
+node.js
+--------
+konzultacky - teamsy, do hospody
+
+na tretinx - aktivita, semestralka, zaverecny test - nutny se dostavit
+
+semestralka na serverovu aplikaci
+
+neni minimum z jednotlivych casti, ze semestralky a testy mozno ziskat vic nez 33 bodu
