@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1><%= title.toUpperCase() %></h1>
+    
+    <ul>
+        <% for (const todo of todos) { %>
+        <li>
+            <%=todo.title %>
+
+        </li>
+        <% } %>        
+    </ul>
+
+    <form method="post" action="/todos">
+        <input name="title" />
+        <button type="submit"> Pridat todo </button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "cv4",
+  "version": "1.0.0",
+  "description": "A simple Node.js HTTP server with chalk for colored logging.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.4.1"
+  }
+}

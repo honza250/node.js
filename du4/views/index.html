@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moje Todo app</title>
+</head>
+<body>
+  <h1><%= title.toUpperCase() %></h1>
+
+  <ul>
+    <% for (const todo of todos) { %>
+    <li>
+      <a href="/todo/<%= todo.id %>"><%= todo.title %></a> - 
+      <% if (todo.done) { %>
+        <a href="/todos/<%= todo.id %>/toggle">dokončeno</a>
+      <% } else { %>
+        <a href="/todos/<%= todo.id %>/toggle">nedokončeno</a>
+      <% } %>
+      <a href="/todos/<%= todo.id %>/remove">odebrat</a>
+    </li>
+    <% } %>
+  </ul>
+
+  <form method="post" action="/todos">
+    <input name="title" placeholder="Nové todo" required />
+    <button type="submit">Přidat todo</button>
+  </form>
+</body>
+</html>
+
